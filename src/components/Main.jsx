@@ -1,14 +1,13 @@
 import "../blocks/Main.css";
 import { useContext } from "react";
-import { defaultClothingItems } from "../utils/constant";
 import ItemCard from "./ItemCard";
 import WeatherCard from "./WeatherCard";
 import { defaultWeatherOptions } from "../utils/constant";
 import CurrentTemperatureUnitContext from "../contexts/CurrentTemperatureUnitContext";
 
-function Main({ weatherData, handleCardClick }) {
+function Main({ weatherData, handleCardClick, clothingItems }) {
   const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
-  const filteredItems = defaultClothingItems.filter(
+  const filteredItems = clothingItems.filter(
     (item) => item.weather === weatherData.type,
   );
 
@@ -34,7 +33,9 @@ function Main({ weatherData, handleCardClick }) {
               />
             ))
           ) : (
-            <p>No clothing items available for this weather.</p>
+            <li className="cards__no-items">
+              <p>No clothing items available for this weather.</p>
+            </li>
           )}
         </ul>
       </section>

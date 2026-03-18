@@ -22,7 +22,7 @@ function AddItemModal({ activeModal, buttonText, closeActiveModal }) {
         />
       </label>
       <label className="modal__label" htmlFor="garment-img">
-        Image{" "}
+        Image URL{" "}
         <input
           className="modal__input"
           type="url"
@@ -36,15 +36,33 @@ function AddItemModal({ activeModal, buttonText, closeActiveModal }) {
       <fieldset className="modal__radio-btns">
         <legend className="modal__legend">Select the weather type:</legend>
         <label className="modal__label modal__label-type-radio" htmlFor="hot">
-          <input className="modal__radio-input" type="radio" id="hot" />
+          <input
+            className="modal__radio_input"
+            type="radio"
+            id="hot"
+            name="weather"
+            value="hot"
+          />
           Hot
         </label>
         <label className="modal__label modal__label-type-radio" htmlFor="warm">
-          <input className="modal__radio-input" type="radio" id="warm" />
+          <input
+            className="modal__radio_input"
+            type="radio"
+            id="warm"
+            name="weather"
+            value="warm"
+          />
           Warm
         </label>
         <label className="modal__label modal__label-type-radio" htmlFor="cold">
-          <input className="modal__radio-input" type="radio" id="cold" />
+          <input
+            className="modal__radio_input"
+            type="radio"
+            id="cold"
+            name="weather"
+            value="cold"
+          />
           Cold
         </label>
       </fieldset>

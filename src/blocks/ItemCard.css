@@ -37,7 +37,7 @@
 .card__img {
   width: 325px;
   height: 328px;
-
+  cursor: pointer;
   border-radius: 12px;
   object-fit: cover;
   padding: 0;
