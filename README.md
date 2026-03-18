@@ -1,8 +1,17 @@
-# React + Vite
+# Sprint 10 project React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this project I built a web page, useing Vite and React along with other tools listed in the Skills section, app that depending on the weather provides you with clothing options to choose from.
 
-Currently, two official plugins are available:
+# link to GitHub Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. [link to GitHub pages](https://San2ue.github.io/se_project_react)
+
+# skills
+
+- git/github
+- figma
+- CSS
+- HTML 5
+- javascript (arrays, objects, functions, query calls, for/while, foreach, and =>(arrow functions))
+- webpack
+- React
