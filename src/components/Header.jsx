@@ -9,7 +9,7 @@ function Header({ handleAddItem, weatherData }) {
   });
 
   return (
-    <div className="header">
+    <header className="header">
       <img className="header__logo" src={headerLogo} alt="App logo" />
       <p className="header__date-location">
         {currentDate}, {weatherData.city}
@@ -25,7 +25,7 @@ function Header({ handleAddItem, weatherData }) {
         <p className="header__user-name">Sean May</p>
         <img className="header__user-avatar" src={avatar} alt="Sean May" />
       </div>
-    </div>
+    </header>
   );
 }
 

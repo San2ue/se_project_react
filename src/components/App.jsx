@@ -60,7 +60,7 @@ function App() {
           <Footer />
         </div>
         <AddItemModal
-          activeModal={activeModal}
+          isOpen={activeModal === "add-garment"}
           buttonText="Add garment"
           closeActiveModal={closeActiveModal}
         />

@@ -1,14 +1,15 @@
 .page {
+  max-width: 1360px;
   background-color: #f3f3f3;
   font-family: "CabinetGrotesk", Arial, sans-serif;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 32px 40px;
   width: 100%;
 }
 
 .page__content {
-  max-width: 1360px;
   overflow: auto;
   margin: 0;
   padding: 0;

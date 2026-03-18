@@ -1,12 +1,9 @@
 //import sunny from "../images/day/sunny.svg";
 import "../blocks/WeatherCard.css";
 import { weatherOptions } from "../utils/constant";
+import { defaultWeatherOptions } from "../utils/constant";
 
-function WeatherCard({
-  weatherData,
-  defaultWeatherOptions,
-  currentTemperatureUnit,
-}) {
+function WeatherCard({ weatherData, currentTemperatureUnit }) {
   const filteredOptions = weatherOptions.filter((option) => {
     return (
       option.day === weatherData?.isDay &&
@@ -42,12 +39,5 @@ function WeatherCard({
     </section>
   );
 }
-/*return (
-    <section className="weather-card">
-      <p className="weather-card__temp">75 &deg;</p>
-      <img className="weather-card__img" src={sunny} alt="sunny" />
-    </section>
-  );
-}*/
 
 export default WeatherCard;

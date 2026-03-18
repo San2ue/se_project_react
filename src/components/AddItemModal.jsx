@@ -1,10 +1,9 @@
 import ModalWithForm from "./ModalWithForm";
 
-function AddItemModal({ activeModal, buttonText, closeActiveModal }) {
+function AddItemModal({ isOpen, buttonText, closeActiveModal }) {
   return (
     <ModalWithForm
-      activeModal={activeModal}
-      isOpen={activeModal === "add-garment"}
+      isOpen={isOpen}
       titleText="New garment"
       buttonText={buttonText}
       closeActiveModal={closeActiveModal}
@@ -28,8 +27,6 @@ function AddItemModal({ activeModal, buttonText, closeActiveModal }) {
           type="url"
           id="garment-img"
           placeholder="Image URL"
-          minLength="2"
-          maxLength="40"
           required
         />
       </label>

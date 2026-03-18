@@ -15,7 +15,6 @@ function Main({ weatherData, handleCardClick, clothingItems }) {
     <main>
       <WeatherCard
         weatherData={weatherData}
-        defaultWeatherOptions={defaultWeatherOptions}
         currentTemperatureUnit={currentTemperatureUnit}
       />
       <section className="cards">
