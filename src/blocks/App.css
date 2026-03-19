@@ -1,5 +1,4 @@
 .page {
-  max-width: 1360px;
   background-color: #f3f3f3;
   font-family: "CabinetGrotesk", Arial, sans-serif;
   display: flex;
@@ -10,6 +9,7 @@
 }
 
 .page__content {
+  max-width: 1360px; /**/
   overflow: auto;
   margin: 0;
   padding: 0;
